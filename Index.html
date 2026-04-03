@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Mini Shopee UI</title>
+  <style>
+    body {
+      margin:0;
+      font-family: Arial;
+      background:#f5f5f5;
+    }
+
+    /* HEADER */
+    .header {
+      background:#ff2d55;
+      padding:10px;
+      display:flex;
+      gap:5px;
+    }
+
+    .header input {
+      flex:1;
+      padding:10px;
+      border:none;
+      border-radius:5px;
+    }
+
+    .header button {
+      background:white;
+      border:none;
+      padding:10px;
+      border-radius:5px;
+      color:#ff2d55;
+      font-weight:bold;
+    }
+
+    /* BANNER */
+    .banner {
+      padding:10px;
+    }
+
+    .banner img {
+      width:100%;
+      border-radius:10px;
+    }
+
+    /* GRID PRODUK */
+    .produk {
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:10px;
+      padding:10px;
+    }
+
+    .card {
+      background:white;
+      border-radius:10px;
+      overflow:hidden;
+    }
+
+    .card img {
+      width:100%;
+    }
+
+    .info {
+      padding:10px;
+    }
+
+    .harga {
+      color:#ff2d55;
+      font-weight:bold;
+    }
+
+    /* NAVBAR BAWAH */
+    .navbar {
+      position:fixed;
+      bottom:0;
+      width:100%;
+      background:white;
+      display:flex;
+      justify-content:space-around;
+      padding:10px 0;
+      border-top:1px solid #ccc;
+    }
+
+    .nav-item {
+      text-align:center;
+      font-size:12px;
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<div class="header">
+  <input placeholder="Cari produk...">
+  <button>Cari</button>
+</div>
+
+<!-- BANNER -->
+<div class="banner">
+  <img src="https://via.placeholder.com/400x150">
+</div>
+
+<!-- PRODUK -->
+<div class="produk">
+
+  <div class="card">
+    <img src="https://via.placeholder.com/200">
+    <div class="info">
+      <p>Tas Mini Keren</p>
+      <div class="harga">Rp25.000</div>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="https://via.placeholder.com/200">
+    <div class="info">
+      <p>Tas Selempang Pria</p>
+      <div class="harga">Rp48.000</div>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="https://via.placeholder.com/200">
+    <div class="info">
+      <p>Sepeda Anak</p>
+      <div class="harga">Rp375.000</div>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="https://via.placeholder.com/200">
+    <div class="info">
+      <p>Skincare Set</p>
+      <div class="harga">Rp71.000</div>
+    </div>
+  </div>
+
+</div>
+
+<!-- NAVBAR -->
+<div class="navbar">
+  <div class="nav-item">🚅<br>Beranda</div>
+  <div class="nav-item">🐣<br>Pesan</div>
+  <div class="nav-item">🛒<br>Troli</div>
+  <div class="nav-item">👤<br>Akun</div>
+</div>
+
+</body>
+</html>
